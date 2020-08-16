@@ -1,0 +1,168 @@
+/*----------------------------header--------------------------------------*/
+
+nav a
+{
+    color: white !important;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::before
+{
+    content: '';
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 8px; 
+    background-color: white;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+nav a:hover:before
+{
+    width: 50%;
+}
+
+header
+{
+    background-image: url(../images/intro-bg.jpg);
+    background-position: center center;
+    background-size: cover; 
+}
+
+.header-content
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content h1
+{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.header-content p
+{
+    font-size: 2.5rem;
+}
+
+/*----------------------------/header--------------------------------------*/
+
+/*----------------------------about--------------------------------------*/
+
+.about
+{
+    background-color: white;
+}
+
+.about-img img
+{
+    border-radius: 4px;
+}
+
+.about-par p
+{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.about-par span
+{
+    font-weight: bold;
+}
+
+.about-text h5
+{
+    font-size: 2rem;
+    position: relative;
+}
+
+.about-text h5::before
+{
+    content: '';
+    width: 6rem;
+    height: 3px;
+    bottom: 0;
+    left: 0px; 
+    background-color: blue;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+/*----------------------------/About--------------------------------------*/
+
+.car-sec
+{
+    height: 90vh;
+    background-image: url(../images/overlay-bg.jpg);
+}
+
+.car
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.car img
+{
+    border-radius: 50%;
+}
+
+/*---------------------------responsive section-----------------------*/
+
+@media all and (max-width:600px)
+{
+    .header-content h1
+{
+    font-size: 3rem;
+}
+
+.header-content p
+{
+    font-size: 1.5rem;
+}
+    body
+    {
+        
+    }
+}
+
+@media all and (min-width:601px) and (max-width:768px)
+{
+    .header-content h1
+{
+    font-size: 3rem;
+}
+
+.header-content p
+{
+    font-size: 1.5rem;
+}
+    body
+    {
+        
+    }
+}
+
+@media all and (min-width:769px) and (max-width:992px)
+{
+    body
+    {
+        
+    }
+}
+
+@media all and (min-width:993px)
+{  
+    body
+    {
+
+    }
+}
+
+
+/*---------------------------/responsive section-----------------------*/
